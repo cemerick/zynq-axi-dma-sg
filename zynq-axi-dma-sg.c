@@ -153,7 +153,7 @@ from AXI DMA v7.1 - LogiCORE IP Product Guide http://www.xilinx.com/support/docu
 
 	mm2s_descriptor_register_mmap[0x0 >> 2] = HP0_MM2S_DMA_DESCRIPTORS_ADDRESS + 0x40; // set next descriptor address
 	mm2s_descriptor_register_mmap[0x8 >> 2] = HP0_MM2S_SOURCE_MEM_ADDRESS + 0x0; // set target buffer address
-	mm2s_descriptor_register_mmap[0x18 >> 2] = 0x87D0000; // set mm2s/s2mm buffer length to control register
+	mm2s_descriptor_register_mmap[0x18 >> 2] = 0x7D0000; // set mm2s/s2mm buffer length to control register
 
 	mm2s_descriptor_register_mmap[0x40 >> 2] = HP0_MM2S_DMA_DESCRIPTORS_ADDRESS + 0x80; // set next descriptor address
 	mm2s_descriptor_register_mmap[0x48 >> 2] = HP0_MM2S_SOURCE_MEM_ADDRESS + 0x7D0000; // set target buffer address
@@ -177,7 +177,7 @@ from AXI DMA v7.1 - LogiCORE IP Product Guide http://www.xilinx.com/support/docu
 
 	mm2s_descriptor_register_mmap[0x180 >> 2] = 0x00; // set next descriptor address (unused?)
 	mm2s_descriptor_register_mmap[0x188 >> 2] = HP0_MM2S_SOURCE_MEM_ADDRESS + 0x2EE0000; // set target buffer address
-	mm2s_descriptor_register_mmap[0x198 >> 2] = 0x47D0000; // set mm2s/s2mm buffer length to control register
+	mm2s_descriptor_register_mmap[0x198 >> 2] = 0x7D0000; // set mm2s/s2mm buffer length to control register
 
 	mm2s_tail_descriptor_address = HP0_MM2S_DMA_DESCRIPTORS_ADDRESS + 0x180 ; // save tail descriptor address
 
@@ -186,7 +186,7 @@ from AXI DMA v7.1 - LogiCORE IP Product Guide http://www.xilinx.com/support/docu
 
 	s2mm_descriptor_register_mmap[0x0 >> 2] = HP0_S2MM_DMA_DESCRIPTORS_ADDRESS + 0x40; // set next descriptor address
 	s2mm_descriptor_register_mmap[0x8 >> 2] = HP0_S2MM_TARGET_MEM_ADDRESS + 0x0; // set target buffer address
-	s2mm_descriptor_register_mmap[0x18 >> 2] = 0x87D0000; // set mm2s/s2mm buffer length to control register
+	s2mm_descriptor_register_mmap[0x18 >> 2] = 0x7D0000; // set mm2s/s2mm buffer length to control register
 
 	s2mm_descriptor_register_mmap[0x40 >> 2] = HP0_S2MM_DMA_DESCRIPTORS_ADDRESS + 0x80; // set next descriptor address
 	s2mm_descriptor_register_mmap[0x48 >> 2] = HP0_S2MM_TARGET_MEM_ADDRESS + 0x7D0000; // set target buffer address
@@ -210,7 +210,7 @@ from AXI DMA v7.1 - LogiCORE IP Product Guide http://www.xilinx.com/support/docu
 
 	s2mm_descriptor_register_mmap[0x180 >> 2] = 0x00; // set next descriptor address (unused?)
 	s2mm_descriptor_register_mmap[0x188 >> 2] = HP0_S2MM_TARGET_MEM_ADDRESS + 0x2EE0000; // set target buffer address
-	s2mm_descriptor_register_mmap[0x198 >> 2] = 0x47D0000; // set mm2s/s2mm buffer length to control register
+	s2mm_descriptor_register_mmap[0x198 >> 2] = 0x7D0000; // set mm2s/s2mm buffer length to control register
 
 	s2mm_tail_descriptor_address = HP0_S2MM_DMA_DESCRIPTORS_ADDRESS + 0x180 ; // save tail descriptor address
 
